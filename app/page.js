@@ -401,24 +401,19 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               {
-                name: "Alex Johnson",
+                name: "Cindy Wang",
                 role: "Co-Founder & CEO",
                 contribution: "Business Strategy, Product Development"
               },
               {
-                name: "Jamie Chen",
+                name: "Bo Xie",
                 role: "Co-Founder & CTO",
                 contribution: "Platform Architecture, Matching Algorithm"
               },
               {
-                name: "Taylor Williams",
+                name: "Zoey Ling",
                 role: "Head of Mentor Relations",
                 contribution: "Mentor Recruitment, Quality Assurance"
-              },
-              {
-                name: "Sam Rodriguez",
-                role: "Marketing Director",
-                contribution: "Brand Strategy, User Acquisition"
               }
             ].map((member, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -462,7 +457,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4">Resources</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="/business-plan.pdf" className="text-indigo-600 hover:text-indigo-800 transition">
+                  <a href="/businessplan.pdf" className="text-indigo-600 hover:text-indigo-800 transition">
                     Business Plan (PDF)
                   </a>
                 </li>
