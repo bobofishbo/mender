@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ArrowRight, CheckCircle, Users, Star, User, Activity, Filter } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
             <a href="#how-it-works" className="hover:text-indigo-200 transition">How It Works</a>
             <a href="#team" className="hover:text-indigo-200 transition">Team</a>
             <a href="#resources" className="hover:text-indigo-200 transition">Resources</a>
+            <Link href="/demo" className="hover:text-indigo-200 transition">Demo</Link>
           </div>
           <div className="flex space-x-2">
             <button className="bg-white text-indigo-600 px-4 py-2 rounded-md font-medium hover:bg-indigo-100 transition">
@@ -35,12 +37,12 @@ export default function Home() {
       <section id="home" className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-20">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Find Your Perfect College Mentor</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Match Your Mentor With Mender</h1>
             <p className="text-xl mb-8">Connect with current students and alumni for personalized guidance on college applications and first-year advice.</p>
             <div className="flex space-x-4">
-              <button className="bg-white text-indigo-600 px-6 py-3 rounded-md font-medium hover:bg-indigo-100 transition flex items-center">
-                Find a Mentor <ArrowRight className="ml-2" size={18} />
-              </button>
+              <Link href="/demo" className="bg-white text-indigo-600 px-6 py-3 rounded-md font-medium hover:bg-indigo-100 transition flex items-center">
+                Try Demo <ArrowRight className="ml-2" size={18} />
+              </Link>
               <button className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition">
                 Become a Mentor
               </button>
@@ -145,7 +147,7 @@ export default function Home() {
                     <h3 className="font-semibold text-lg">Find Your Mentor</h3>
                   </div>
                   <div className="p-6">
-                    <div className="mb-6">
+                  <div className="mb-6">
                       <label className="block text-gray-700 mb-2 font-medium">I'm interested in:</label>
                       <div className="flex flex-wrap gap-2">
                         {['Engineering', 'Business', 'Arts', 'Sciences', 'Pre-Med'].map((item, index) => (
@@ -179,9 +181,9 @@ export default function Home() {
                         <span>Expert</span>
                       </div>
                     </div>
-                    <button className="w-full bg-indigo-500 text-white px-4 py-3 rounded-md font-medium hover:bg-indigo-400 transition flex items-center justify-center">
-                      <Filter size={18} className="mr-2" /> Match Me with Mentors
-                    </button>
+                    <Link href="/demo" className="w-full bg-indigo-500 text-white px-4 py-3 rounded-md font-medium hover:bg-indigo-400 transition flex items-center justify-center">
+                      <Filter size={18} className="mr-2" /> Try Interactive Demo
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -289,9 +291,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="mt-6">
-                  <button className="bg-indigo-500 text-white px-6 py-3 rounded-md font-medium hover:bg-indigo-400 transition w-full">
-                    Find My Mentor
-                  </button>
+                  <Link href="/demo" className="bg-indigo-500 text-white px-6 py-3 rounded-md font-medium hover:bg-indigo-400 transition w-full block text-center">
+                    Try Student Demo
+                  </Link>
                 </div>
               </div>
             </div>
@@ -337,8 +339,9 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Testimonials Section */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Success Stories</h2>
@@ -398,22 +401,22 @@ export default function Home() {
               Founded by college students who recently navigated the admissions process themselves.
             </p>
           </div>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 name: "Cindy Wang",
                 role: "Co-Founder & CEO",
-                contribution: "Business Strategy, Product Development"
+                contribution: "Write Business Plan, Market Research, Work on Presentation."
               },
               {
                 name: "Bo Xie",
                 role: "Co-Founder & CTO",
-                contribution: "Platform Architecture, Matching Algorithm"
+                contribution: "Build Website, Create Wireframes, Work on Presenatation."
               },
               {
                 name: "Zoey Ling",
-                role: "Head of Mentor Relations",
-                contribution: "Mentor Recruitment, Quality Assurance"
+                role: "Co-Founder & COO",
+                contribution: "Business Plan, Market Research, Work on Presentation."
               }
             ].map((member, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -439,9 +442,9 @@ export default function Home() {
             Join Mender today and get the personalized college guidance you deserve. Whether you're applying to college or want to help others as a mentor, we've got you covered.
           </p>
           <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-            <button className="bg-white text-indigo-600 px-8 py-4 rounded-md font-medium hover:bg-indigo-100 transition">
-              Sign Up as a Student
-            </button>
+            <Link href="/demo" className="bg-white text-indigo-600 px-8 py-4 rounded-md font-medium hover:bg-indigo-100 transition">
+              Try Demo
+            </Link>
             <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition">
               Become a Mentor
             </button>
