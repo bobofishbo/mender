@@ -64,7 +64,7 @@ export default function Demo() {
       interests: ['Engineering', 'Sciences'],
       schools: ['Ivy League'],
       experience: 4,
-      price: '$45/hour',
+      price: '$15/hour',
       availability: ['Monday', 'Wednesday', 'Friday']
     },
     {
@@ -78,7 +78,7 @@ export default function Demo() {
       interests: ['Business'],
       schools: ['State Universities'],
       experience: 3,
-      price: '$35/hour',
+      price: '$20/hour',
       availability: ['Tuesday', 'Thursday', 'Saturday']
     },
     {
@@ -92,7 +92,7 @@ export default function Demo() {
       interests: ['Sciences', 'Arts'],
       schools: ['Liberal Arts'],
       experience: 4,
-      price: '$40/hour',
+      price: '$20/hour',
       availability: ['Monday', 'Thursday', 'Sunday']
     },
     {
@@ -106,7 +106,7 @@ export default function Demo() {
       interests: ['Engineering', 'Sciences'],
       schools: ['Technical Institutes'],
       experience: 5,
-      price: '$50/hour',
+      price: '$5/hour',
       availability: ['Wednesday', 'Saturday', 'Sunday']
     },
     {
@@ -120,7 +120,7 @@ export default function Demo() {
       interests: ['Sciences', 'Pre-Med'],
       schools: ['Ivy League', 'State Universities'],
       experience: 4,
-      price: '$45/hour',
+      price: '$25/hour',
       availability: ['Tuesday', 'Friday', 'Sunday']
     }
   ];
